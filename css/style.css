@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&display=swap');
+
+h1, h2, h3 {
+  font-family: 'Fira Code', monospace;
+  font-weight: 600;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #3a3a3a; /* Fond plus sombre */
+  height: 100vh;
+  color: #f0f0f0;
+  font-family: 'Roboto', sans-serif;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: #444;
+  width: 80%;
+  margin: 40px auto;
+}
+
+.navBar {
+  position: fixed;
+  top: 0;
+  width: 97%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1a1a1a; /* Fond plus sombre pour la barre de navigation */
+  padding: 0 20px;
+  color: #f0f0f0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Ombre plus prononcée */
+}
+
+.navBar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 10px;
+}
+
+.navBar ul li {
+  list-style: none;
+}
+
+.navBar ul li a {
+  text-decoration: none;
+  color: #f0f0f0;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navBar ul li a:hover {
+  background-color: #333;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Place les particules derrière le texte */
+  background-color: #1e1e1e; /* Couleur sombre pour le fond */
+}
+
+
+.acceuil {
+  width: 100%;
+  height: 100vh; /* Utilise toute la hauteur de la fenêtre */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Centre horizontalement */
+  padding: 0;
+  margin: 0;
+}
+
+.acceuil h1 {
+  font-family: 'Fira Code', monospace; /* Police en accord avec le reste du site */
+  font-weight: 600;
+  font-size: 4rem; /* Ajuste la taille pour mieux correspondre à l'accueil */
+  color: #f0f0f0; /* Couleur claire pour contraster avec le fond sombre */
+  text-align: center;
+  margin: 0; /* Élimine l'espacement autour du titre */
+  line-height: 1.2; /* Réduit l'espace entre les lignes */
+}
+
+.acceuil h2 {
+  font-family: 'Fira Code', monospace;
+  font-weight: 400;
+  font-size: 2.5rem; /* Plus petit que le nom pour donner un effet visuel intéressant */
+  color: #b0b0b0; /* Une couleur légèrement plus sombre pour le prénom */
+  text-align: center;
+  margin: 0;
+  line-height: 1.2;
+}
+
+
+.moi {
+  margin: 3%;
+  padding: 3%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  height: 500px;
+  background-color: #2e2e2e; /* Fond plus sombre que le fond principal */
+  border-radius: 40px;
+}
+
+.moi p {
+  margin-right: 20px;
+  text-align: center;
+  padding: 50px;
+  border-radius: 8px;
+  font-size: 18px;
+  color: #f0f0f0;
+  border: 1px solid #555;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  font-family: 'Courier New', monospace;
+}
+
+.moi img {
+  margin-left: 40px;
+  border-radius: 5px;
+  border: 2px solid #555;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.bar {
+  display: flex;
+  flex-direction: column;
+}
+
+:root {
+  --success: #00b894;
+  --progress: #e17055;
+}
+
+#Tcomp {
+  margin: 2%;
+}
+
+.competence {
+  
+  margin: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.progressbar-wrapper {
+  background-color: #444; /* Background plus sombre pour la barre */
+  color: white;
+  border-radius: 15px;
+  margin: 15px 0;
+  width: 30%;
+  height: 30%;
+  min-width: 250px;
+  box-sizing: border-box;
+}
+
+.progressbar {
+  background-color: var(--progress);
+  color: white;
+  padding: 1rem;
+  text-align: right;
+  font-size: 20px;
+  border-radius: 15px;
+  transition: width 0.5s ease;
+}
+
+/* Taille des barres adaptée au pourcentage */
+.progressbar[title="Python"] {
+  width: 90%;
+}
+
+.progressbar[title="HTML5"] {
+  width: 80%;
+}
+
+.progressbar[title="CSS3"] {
+  width: 80%;
+}
+
+.progressbar[title="JavaScript"] {
+  width: 40%;
+}
+
+.progressbar[title="React"]{
+  width: 20%;
+}
+.progressbar[title="C"]{
+  width: 20%;
+}
+
+/* Couleurs spécifiques pour chaque compétence */
+.progressbar[title="Python"] {
+  background-color: var(--progress);
+}
+
+.progressbar[title="HTML5"] {
+  background-color: var(--success);
+}
+
+.progressbar[title="CSS3"] {
+  background-color: #0984e3;
+}
+
+.progressbar[title="JavaScript"] {
+  background-color: #fdcb6e;
+}
+
+.progressbar[title="React"]{
+  background-color:blueviolet ;
+}
+
+.Projet{
+  height: 400px;
+  border-radius: 40px;
+  background-color:  #2e2e2e;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.Projet h1{
+  margin: 2%;
+  position: relative;
+  top: 0;
+  left: 0%;
+}
+
+.carte1 {
+  height: 300px; /* Augmentez la hauteur si besoin */
+  text-align: center;
+  padding: 20px;
+  margin: 20px auto; /* Ajoute un peu d'espace autour de la carte */
+  width: 15%; /* Légèrement plus large */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Centre l'image et le texte */
+  background-color: #2a2a2a; /* Couleur de fond plus claire pour contraster */
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Ombre pour ajouter de la profondeur */
+  transition: transform 0.2s, box-shadow 0.2s; /* Transition plus douce */
+}
+
+.carte1:hover {
+  transform: scale(1.05); /* Moins de zoom pour une interaction plus subtile */
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.7); /* Ombre plus marquée au survol */
+}
+
+.carte1 h3 {
+  color: #f0f0f0; /* Couleur du texte en clair */
+  margin-bottom: 10px; /* Espace sous le titre */
+}
+
+.carte1 img {
+  border-radius: 10px; /* Arrondit les coins de l'image */
+  margin-bottom: 10px; /* Espace sous l'image */
+}
+
+.carte1 p {
+  color: #b0b0b0; /* Couleur du texte pour le paragraphe */
+}
+
+
+.modal {
+  display: none; /* Masquer par défaut */
+  position: fixed;
+  z-index: 1; /* Au-dessus des autres éléments */
+  left: 0;
+  top: 0;
+  width: 100%; /* Plein écran */
+  height: 100%; /* Plein écran */
+  overflow: auto; /* Ajoute un défilement si nécessaire */
+  background-color: rgba(0, 0, 0, 0.7); /* Fond sombre */
+}
+
+.modal-content {
+  text-align: left;
+  background-color: black;
+  margin: 15% auto; /* Centrer le modal */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Largeur du modal */
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

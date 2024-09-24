@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enzo-Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="js/particules.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/modal2.js"></script>
+</head>
+<body>
+  <nav class="navBar">
+    <h1>Enzo Gubbiotti</h1>
+    <ul>
+      <li><a href="#moi"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></a> </li>
+      <li><a href="#comp"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-compass"><path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"/><circle cx="12" cy="12" r="10"/></svg></a> </li>
+      <li><a href="#projet"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></svg></a></li>
+    </ul>
+  </nav>
+
+  <div id="particles-js">
+  </div>
+  <div class="acceuil">
+    <h1>Enzo Gubbiotti</h1>
+    <h2>Développeur Web</h2>
+  </div>
+  
+  
+
+  <section class="moi" id="moi">
+    <img src="img/moi.jpeg" height="300px"/>
+    <p>Je suis actuellement en 2ème de BUT informatique et altérant. Depuis mes 15 ans je m'amuse a coder diverse choses en diverse language <br>
+    tels que des sites vitrine, des jeux ou encore des applications en C
+    Mon objectfis proffesionnels est de devenir Fullstack developpeur.
+    </p>
+  </section>
+  <hr>
+  
+    <h1 id="Tcomp">Compétence</h1>
+
+  <div class="competence" id="comp">  
+    <div class="progressbar-wrapper">
+      <div title="Python" class="progressbar" style="width: 90%;">Python - 90%</div>
+    </div>
+  
+    <div class="progressbar-wrapper">
+      <div title="HTML5" class="progressbar" style="width: 80%;">HTML5 - 80%</div>
+    </div>
+  
+    <div class="progressbar-wrapper">
+      <div title="CSS3" class="progressbar" style="width: 80%;">CSS3 - 80%</div>
+    </div>
+  
+    <div class="progressbar-wrapper">
+      <div title="JavaScript" class="progressbar" style="width: 40%;">JavaScript - 40%</div>
+    </div>
+  
+    <div class="progressbar-wrapper">
+      <div title="React" class="progressbar" style="width: 30%;">React - 20%</div>
+    </div>
+    
+    <div class="progressbar-wrapper">
+      <div title="C" class="progressbar" style="width: 70%;">C - 70%</div>
+    </div>
+  </div>
+   
+  </div>
+
+  <hr>
+
+  <h1> Projets</h1>
+
+  <div class="Projet">
+    <br>
+    <div class="carte1" onclick="openModal()">
+      <h3>Pygame</h3>
+      <img src="img/jeu.png" height="100"/>
+      <p>Language Python</p>
+    </div>
+  
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Détails du Projet Pygame</h2>
+        <img src="img/jeu.png" height="200"/>
+        <p>Pygame est un projet que j'ai réaliser en classe de Terminal.</p>
+        <p> Ce projet a été développé en Python, en utilisant des bibliothèques telles que Pygame et Pytmx. L'objectif était de recréer un mini-jeu inspiré de Pokémon, permettant au joueur de se déplacer sur une carte interactive.
+          Pour ce projet, j'ai utilisé exclusivement la programmation orientée objet (POO), ce qui m'a permis de structurer le code de manière efficace.
+          Cette expérience m'a non seulement appris les bases de GitHub, mais aussi l'importance du travail en équipe. J'ai également réalisé à quel point il est crucial de planifier le développement avant de commencer à coder.
+      </p>
+      </div>
+    </div>
+
+    <div class="carte1" onclick="openModal2()">
+      <h3>Gestionnaire de base de données</h3>
+      <p>Langage C</p>
+  </div>
+  
+  <div id="myModal2" class="modal">
+      <div class="modal-content">
+          <span class="close" onclick="closeModal2()">&times;</span>
+          <h2>Détails du Projet de Gestionnaire de base de données</h2>
+          <p>Voici plus d'informations sur le projet...</p> 
+  </div>
+  
+
+  </div>
+</body>
+</html>
