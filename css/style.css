@@ -26,6 +26,13 @@ hr {
   margin: 40px auto;
 }
 
+.navBar a{
+  font-family: 'Fira Code', monospace;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+}
+
 .navBar {
   position: fixed;
   top: 0;
@@ -48,6 +55,9 @@ hr {
 }
 
 .navBar ul li {
+  display: flex;
+  justify-items: center;
+  height: 40px;
   list-style: none;
 }
 
@@ -60,6 +70,7 @@ hr {
 }
 
 .navBar ul li a:hover {
+
   background-color: #333;
 }
 
@@ -225,8 +236,11 @@ hr {
 .progressbar[title="React"]{
   background-color:blueviolet ;
 }
-
+#TitreProjet{
+  margin: 3%;
+}
 .Projet{
+  margin: 3%;
   height: 400px;
   border-radius: 40px;
   background-color:  #2e2e2e;
@@ -313,4 +327,86 @@ hr {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #121212;
+  border-radius: 6px;
+}
+
+#TitreContact {
+  margin-bottom: 20px;
+  font-size: 2em;
+  text-align: center;
+  border-bottom: 2px solid #00b894;
+  padding-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.BigReseau {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  width: 100%;
+}
+
+.reseau {
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  color: #f1f1f1;
+  gap: 10px;
+}
+
+.reseau a, .reseau p {
+  display: flex;
+  align-items: center;
+  color: #00b894;
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.reseau a:hover, .reseau p:hover {
+  color: #55efc4;
+}
+
+.reseau svg {
+  margin-right: 8px;
+  stroke: #00b894;
+  transition: stroke 0.3s ease;
+}
+
+.reseau svg:hover {
+  stroke: #55efc4;
+}
+
+.travail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 40px;
+  border-left: 1px solid #f1f1f1;
+}
+
+.travail h2 {
+  font-size: 1.5em;
+  color: #00b894;
+  margin-bottom: 10px;
+}
+
+.travail p {
+  color: #f1f1f1;
+  font-size: 1.2em;
+}
+
+.travail p:hover {
+  color: #55efc4;
 }
